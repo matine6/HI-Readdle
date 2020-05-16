@@ -14,6 +14,7 @@ class CollectionController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentValue: UISegmentedControl!
+    
     var personArray: [Person]!
     
     override func viewDidLoad() {

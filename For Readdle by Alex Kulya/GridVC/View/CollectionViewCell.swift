@@ -12,6 +12,7 @@ import Hero
 class CollectionViewCell: UICollectionViewCell {    
     
     @IBOutlet weak var avatarImage: UIImageView!
+    
     func setupDataOfPersonInCellItem(person: Person) {
         var personInFunc = person
         personInFunc.avatarUrl.append("?s=50&d=mp")
@@ -19,7 +20,6 @@ class CollectionViewCell: UICollectionViewCell {
         self.frame.size.height = CGFloat(50)
         self.frame.size.width = CGFloat(50)
         
-        // Присваиваем статус пользователя и аватар
         DispatchQueue.global(qos: .userInitiated).async {
             guard let imageUrl = URL(string: personInFunc.avatarUrl) else { return }
             guard let imageData = try? Data(contentsOf: imageUrl) else { return }

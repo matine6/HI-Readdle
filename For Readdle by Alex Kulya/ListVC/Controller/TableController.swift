@@ -80,7 +80,6 @@ extension TableController: UITableViewDelegate, UITableViewDataSource {
         let person = personArray[indexPath.row]
         performSegue(withIdentifier: "showDetailFromList", sender: person)
     }
-    
 }
 
 

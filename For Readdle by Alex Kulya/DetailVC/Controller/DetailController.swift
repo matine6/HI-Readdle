@@ -28,7 +28,6 @@ class DetailController: UIViewController {
                 self.avatarImage.image = UIImage(data: imageData)
             }
         }
- 
         avatarImage.heroID = person.identifireForHero
         
         nameLabel.text = person.name
@@ -40,7 +39,5 @@ class DetailController: UIViewController {
             statusLabel.text = "online"
         }
     }
-    
     deinit {}
-
 }

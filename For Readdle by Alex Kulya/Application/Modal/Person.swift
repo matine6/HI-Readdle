@@ -22,8 +22,10 @@ struct Person {
 }
 
 extension Person {
+    
     static func createPersons() -> [Person] {
         var personArray = [Person]()
+        
         DispatchQueue.global(qos: .background).sync {
             let rundomNumberOfPersons = Int.random(in: 70...90)
             let imageUrl = "https://www.gravatar.com/avatar/"
@@ -38,7 +40,7 @@ extension Person {
                     identifireForHero: String(index)
                 )
                 
-                // Создаем ссылку на аватар
+                // Сreate a link to the avatar
                 var hash = Hasher()
                 hash.combine(personInArray.email)
                 let hashValue = hash.finalize()
