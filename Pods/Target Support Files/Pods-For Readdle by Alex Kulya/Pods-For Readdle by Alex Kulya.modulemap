@@ -1,0 +1,6 @@
+framework module Pods_For_Readdle_by_Alex_Kulya {
+  umbrella header "Pods-For Readdle by Alex Kulya-umbrella.h"
+
+  export *
+  module * { export * }
+}
