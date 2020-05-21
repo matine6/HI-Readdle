@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PRe-Oc-DaV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -11,13 +11,13 @@
         <!--Table Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TableController" customModule="For_Readdle_by_Alex_Kulya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableController" id="BYZ-38-t0r" customClass="TableController" customModule="For_Readdle_by_Alex_Kulya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qVy-78-Mrb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" rowHeight="50" id="YGV-RA-65k" customClass="TableViewCell" customModule="For_Readdle_by_Alex_Kulya" customModuleProvider="target">
@@ -72,50 +72,49 @@
                                     <action selector="changePersons" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orn-2w-Cfy"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Js3-nN-IgF">
+                                <rect key="frame" x="109" y="44" width="196" height="32"/>
+                                <segments>
+                                    <segment title="List"/>
+                                    <segment title="Grid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="goToGridSegmelnt:" destination="BYZ-38-t0r" eventType="valueChanged" id="KQu-yv-wRv"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qVy-78-Mrb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Aj-Tf-5vw"/>
-                            <constraint firstItem="WVs-Ox-KzS" firstAttribute="top" secondItem="qVy-78-Mrb" secondAttribute="bottom" constant="8" id="7ca-pB-rHo"/>
+                            <constraint firstItem="Js3-nN-IgF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="4SR-7W-Q3F"/>
                             <constraint firstItem="WVs-Ox-KzS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="9Ef-8O-f9C">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="qVy-78-Mrb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Erb-Kk-dkK">
+                            <constraint firstItem="Js3-nN-IgF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BzB-Fr-MUP"/>
+                            <constraint firstItem="WVs-Ox-KzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GJ6-ze-qsX"/>
+                            <constraint firstItem="qVy-78-Mrb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HKp-3s-X4u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Js3-nN-IgF" secondAttribute="trailing" constant="109" id="LAb-uF-17H"/>
+                            <constraint firstItem="WVs-Ox-KzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lye-4V-JJk"/>
+                            <constraint firstItem="qVy-78-Mrb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="OSV-bc-lWO">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="WVs-Ox-KzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GJ6-ze-qsX"/>
-                            <constraint firstItem="WVs-Ox-KzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lye-4V-JJk"/>
-                            <constraint firstItem="qVy-78-Mrb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uc1-VM-Gaz"/>
+                            <constraint firstItem="qVy-78-Mrb" firstAttribute="top" secondItem="Js3-nN-IgF" secondAttribute="bottom" constant="20" id="Owi-yT-OdK"/>
+                            <constraint firstItem="WVs-Ox-KzS" firstAttribute="top" secondItem="qVy-78-Mrb" secondAttribute="bottom" constant="8" id="tUh-cB-3Mq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TeJ-ap-DYj">
-                        <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xZz-2f-dE7">
-                            <rect key="frame" x="107" y="6" width="200" height="32"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="List"/>
-                                <segment title="Grid"/>
-                            </segments>
-                            <connections>
-                                <action selector="goToGridSegmelnt:" destination="BYZ-38-t0r" eventType="valueChanged" id="aDe-CR-fe0"/>
-                            </connections>
-                        </segmentedControl>
-                    </navigationItem>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="segmentValue" destination="xZz-2f-dE7" id="4Rg-Iw-dF0"/>
+                        <outlet property="segmentValue" destination="Js3-nN-IgF" id="Bke-dd-RmD"/>
                         <outlet property="tableView" destination="qVy-78-Mrb" id="0Rm-k5-3Lu"/>
-                        <segue destination="ZAz-n1-as6" kind="show" identifier="showDetailFromList" id="eqd-Yy-DTG"/>
-                        <segue destination="4Lc-ZT-eUm" kind="show" identifier="goToGrid" id="cnw-bM-WD0"/>
+                        <segue destination="ZAz-n1-as6" kind="presentation" identifier="showDetailFromList" modalPresentationStyle="fullScreen" id="eqd-Yy-DTG"/>
+                        <segue destination="4Lc-ZT-eUm" kind="presentation" identifier="goToGrid" modalPresentationStyle="fullScreen" id="cnw-bM-WD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2866.875" y="125"/>
+            <point key="canvasLocation" x="2866.666666666667" y="124.55357142857142"/>
         </scene>
         <!--Collection Controller-->
         <scene sceneID="MLc-CL-Kb0">
@@ -126,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RHV-l9-3Th">
-                                <rect key="frame" x="10" y="98" width="394" height="704"/>
+                                <rect key="frame" x="10" y="95" width="394" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pbg-AA-mzk">
                                     <size key="itemSize" width="128" height="128"/>
@@ -166,46 +165,47 @@
                                     <action selector="changePersons" destination="4Lc-ZT-eUm" eventType="touchUpInside" id="jFA-oX-BfV"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-dx-jSD">
+                                <rect key="frame" x="109" y="44" width="196" height="32"/>
+                                <segments>
+                                    <segment title="List"/>
+                                    <segment title="Grid"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="Brd-S0-RMb" kind="unwind" identifier="unwindToList" unwindAction="unwindToList:" id="3yK-n8-OGZ"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0NF-cE-Qb6" firstAttribute="top" secondItem="RHV-l9-3Th" secondAttribute="bottom" constant="8" id="NgV-Yr-Zmm"/>
+                            <constraint firstItem="qWS-dx-jSD" firstAttribute="leading" secondItem="hRD-YT-pge" secondAttribute="leading" constant="109" id="Ajf-hR-q4d"/>
+                            <constraint firstItem="RHV-l9-3Th" firstAttribute="top" secondItem="qWS-dx-jSD" secondAttribute="bottom" constant="20" id="KJs-bB-hcL"/>
+                            <constraint firstItem="RHV-l9-3Th" firstAttribute="leading" secondItem="hRD-YT-pge" secondAttribute="leading" constant="10" id="LNW-rD-szb"/>
                             <constraint firstItem="0NF-cE-Qb6" firstAttribute="trailing" secondItem="FZX-0E-6d6" secondAttribute="trailing" id="S9a-NE-f3D"/>
-                            <constraint firstItem="RHV-l9-3Th" firstAttribute="top" secondItem="hRD-YT-pge" secondAttribute="top" constant="10" id="dFn-9s-XTI"/>
+                            <constraint firstAttribute="trailing" secondItem="RHV-l9-3Th" secondAttribute="trailing" constant="10" id="Vaw-CM-ue9">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="0NF-cE-Qb6" firstAttribute="bottom" secondItem="hRD-YT-pge" secondAttribute="bottom" id="dUi-HP-LTe"/>
-                            <constraint firstItem="RHV-l9-3Th" firstAttribute="leading" secondItem="hRD-YT-pge" secondAttribute="leading" constant="10" id="kXk-Na-d5M"/>
-                            <constraint firstAttribute="trailing" secondItem="RHV-l9-3Th" secondAttribute="trailing" constant="10" id="rz4-tY-G7o"/>
+                            <constraint firstItem="0NF-cE-Qb6" firstAttribute="top" secondItem="RHV-l9-3Th" secondAttribute="bottom" constant="8" id="duh-1s-Wok"/>
+                            <constraint firstItem="hRD-YT-pge" firstAttribute="trailing" secondItem="qWS-dx-jSD" secondAttribute="trailing" constant="109" id="wTK-uh-EqJ"/>
+                            <constraint firstItem="qWS-dx-jSD" firstAttribute="top" secondItem="hRD-YT-pge" secondAttribute="top" id="z6i-BS-v92"/>
                             <constraint firstItem="0NF-cE-Qb6" firstAttribute="leading" secondItem="hRD-YT-pge" secondAttribute="leading" id="zvl-mY-U7r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hRD-YT-pge"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J1b-X7-P5W">
-                        <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="jwG-81-YY8">
-                            <rect key="frame" x="107" y="6" width="200" height="32"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="List"/>
-                                <segment title="Grid"/>
-                            </segments>
-                            <connections>
-                                <segue destination="Brd-S0-RMb" kind="unwind" identifier="unwindToList" unwindAction="unwindToList:" id="gbb-cN-pVR"/>
-                            </connections>
-                        </segmentedControl>
-                    </navigationItem>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="collectionView" destination="RHV-l9-3Th" id="cex-at-VqJ"/>
-                        <outlet property="segmentValue" destination="jwG-81-YY8" id="05r-vz-cZv"/>
-                        <segue destination="ZAz-n1-as6" kind="show" identifier="showDetailFromGrid" id="9um-Up-O8F"/>
+                        <outlet property="segmentValue" destination="qWS-dx-jSD" id="fFm-E6-KCh"/>
+                        <segue destination="ZAz-n1-as6" kind="presentation" identifier="showDetailFromGrid" modalPresentationStyle="fullScreen" id="9um-Up-O8F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kg8-aQ-Lew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Brd-S0-RMb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3566.666666666667" y="123.88392857142857"/>
+            <point key="canvasLocation" x="3566.5178571428569" y="123.18840579710145"/>
         </scene>
         <!--Detail Controller-->
         <scene sceneID="Kmq-Ly-1Cg">
@@ -216,13 +216,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="445-8j-B3G">
-                                <rect key="frame" x="82" y="168" width="250" height="250"/>
+                                <rect key="frame" x="82" y="124" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="445-8j-B3G" secondAttribute="height" multiplier="1:1" id="0Cm-LW-VHq"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zwq-y2-Oap">
-                                <rect key="frame" x="94" y="448" width="226" height="111.5"/>
+                                <rect key="frame" x="94" y="404" width="226" height="111.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n1-MI-M0g">
                                         <rect key="frame" x="0.0" y="0.0" width="226" height="42"/>
@@ -245,6 +245,14 @@
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=compact" axis="vertical" spacing="7"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-6y-5EE">
+                                <rect key="frame" x="26" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton" destination="ZAz-n1-as6" eventType="touchUpInside" id="QRw-iZ-DY7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -324,33 +332,8 @@
             </objects>
             <point key="canvasLocation" x="4282.608695652174" y="122.54464285714285"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="CxE-8i-bIb">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PRe-Oc-DaV" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PP6-P3-SeW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4KI-iI-09d">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="k5i-jC-0kH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ete-ww-8cJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="126.5625"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eqd-Yy-DTG"/>
+        <segue reference="9um-Up-O8F"/>
     </inferredMetricsTieBreakers>
 </document>

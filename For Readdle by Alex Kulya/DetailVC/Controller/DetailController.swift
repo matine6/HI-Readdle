@@ -39,5 +39,11 @@ class DetailController: UIViewController {
             statusLabel.text = "online"
         }
     }
-    deinit {}
+    
+    @IBAction func backButton() {
+        dismiss(animated: true)
+    }
+    
+    
+//    deinit {}
 }

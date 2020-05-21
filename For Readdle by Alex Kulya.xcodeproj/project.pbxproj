@@ -19,7 +19,19 @@
 		A839DEC22466E8E00038C796 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC12466E8E00038C796 /* TableViewCell.swift */; };
 		A839DEC42466E8F30038C796 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC32466E8F30038C796 /* CollectionViewCell.swift */; };
 		A839DEC72466E9110038C796 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC62466E9110038C796 /* Person.swift */; };
+		A8D6EE4B2474661000DDF873 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EE4A2474661000DDF873 /* PersonTests.swift */; };
+		A8D6EE622475792900DDF873 /* ListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EE612475792900DDF873 /* ListVCTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8D6EE4D2474661000DDF873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A839DE9A2466E70A0038C796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A839DEA12466E70A0038C796;
+			remoteInfo = "For Readdle by Alex Kulya";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C6452CD156E32116677CEA3 /* Pods-For Readdle by Alex Kulya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-For Readdle by Alex Kulya.debug.xcconfig"; path = "Target Support Files/Pods-For Readdle by Alex Kulya/Pods-For Readdle by Alex Kulya.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +49,10 @@
 		A839DEC12466E8E00038C796 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A839DEC32466E8F30038C796 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A839DEC62466E9110038C796 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A8D6EE482474661000DDF873 /* For Readdle by Alex KulyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "For Readdle by Alex KulyaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D6EE4A2474661000DDF873 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		A8D6EE4C2474661000DDF873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8D6EE612475792900DDF873 /* ListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCTests.swift; sourceTree = "<group>"; };
 		E77EDF13046F7EA23F91EB8D /* Pods_For_Readdle_by_Alex_Kulya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_For_Readdle_by_Alex_Kulya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +62,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B69886696B30816D9CAB8D /* Pods_For_Readdle_by_Alex_Kulya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D6EE452474661000DDF873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A839DEA42466E70A0038C796 /* For Readdle by Alex Kulya */,
+				A8D6EE492474661000DDF873 /* For Readdle by Alex KulyaTests */,
 				A839DEA32466E70A0038C796 /* Products */,
 				55BB99E4318016D8072E6653 /* Pods */,
 				52E0DF13BB5F3D3034002B9E /* Frameworks */,
@@ -83,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				A839DEA22466E70A0038C796 /* For Readdle by Alex Kulya.app */,
+				A8D6EE482474661000DDF873 /* For Readdle by Alex KulyaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +235,40 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		A8D6EE492474661000DDF873 /* For Readdle by Alex KulyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D6EE5F2475786000DDF873 /* Model */,
+				A8D6EE5E2475785900DDF873 /* Views */,
+				A8D6EE602475786C00DDF873 /* Controllers */,
+				A8D6EE4C2474661000DDF873 /* Info.plist */,
+			);
+			path = "For Readdle by Alex KulyaTests";
+			sourceTree = "<group>";
+		};
+		A8D6EE5E2475785900DDF873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8D6EE5F2475786000DDF873 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8D6EE4A2474661000DDF873 /* PersonTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8D6EE602475786C00DDF873 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8D6EE612475792900DDF873 /* ListVCTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +291,24 @@
 			productReference = A839DEA22466E70A0038C796 /* For Readdle by Alex Kulya.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A8D6EE472474661000DDF873 /* For Readdle by Alex KulyaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D6EE4F2474661000DDF873 /* Build configuration list for PBXNativeTarget "For Readdle by Alex KulyaTests" */;
+			buildPhases = (
+				A8D6EE442474661000DDF873 /* Sources */,
+				A8D6EE452474661000DDF873 /* Frameworks */,
+				A8D6EE462474661000DDF873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D6EE4E2474661000DDF873 /* PBXTargetDependency */,
+			);
+			name = "For Readdle by Alex KulyaTests";
+			productName = "For Readdle by Alex KulyaTests";
+			productReference = A8D6EE482474661000DDF873 /* For Readdle by Alex KulyaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +321,10 @@
 				TargetAttributes = {
 					A839DEA12466E70A0038C796 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					A8D6EE472474661000DDF873 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = A839DEA12466E70A0038C796;
 					};
 				};
 			};
@@ -261,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				A839DEA12466E70A0038C796 /* For Readdle by Alex Kulya */,
+				A8D6EE472474661000DDF873 /* For Readdle by Alex KulyaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +355,13 @@
 				A839DEB22466E70C0038C796 /* LaunchScreen.storyboard in Resources */,
 				A839DEAF2466E70C0038C796 /* Assets.xcassets in Resources */,
 				A839DEAD2466E70A0038C796 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D6EE462474661000DDF873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +425,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8D6EE442474661000DDF873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D6EE622475792900DDF873 /* ListVCTests.swift in Sources */,
+				A8D6EE4B2474661000DDF873 /* PersonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8D6EE4E2474661000DDF873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A839DEA12466E70A0038C796 /* For Readdle by Alex Kulya */;
+			targetProxy = A8D6EE4D2474661000DDF873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A839DEAB2466E70A0038C796 /* Main.storyboard */ = {
@@ -510,6 +616,46 @@
 			};
 			name = Release;
 		};
+		A8D6EE502474661000DDF873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y22SC73499;
+				INFOPLIST_FILE = "For Readdle by Alex KulyaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.For-Readdle-by-Alex-KulyaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/For Readdle by Alex Kulya.app/For Readdle by Alex Kulya";
+			};
+			name = Debug;
+		};
+		A8D6EE512474661000DDF873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y22SC73499;
+				INFOPLIST_FILE = "For Readdle by Alex KulyaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.For-Readdle-by-Alex-KulyaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/For Readdle by Alex Kulya.app/For Readdle by Alex Kulya";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -527,6 +673,15 @@
 			buildConfigurations = (
 				A839DEB72466E70C0038C796 /* Debug */,
 				A839DEB82466E70C0038C796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D6EE4F2474661000DDF873 /* Build configuration list for PBXNativeTarget "For Readdle by Alex KulyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D6EE502474661000DDF873 /* Debug */,
+				A8D6EE512474661000DDF873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
