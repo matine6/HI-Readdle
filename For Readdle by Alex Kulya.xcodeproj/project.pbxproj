@@ -16,7 +16,6 @@
 		A839DEBF2466E8BB0038C796 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEBE2466E8BB0038C796 /* DetailController.swift */; };
 		A839DEC72466E9110038C796 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC62466E9110038C796 /* Person.swift */; };
 		A8D6EE4B2474661000DDF873 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EE4A2474661000DDF873 /* PersonTests.swift */; };
-		A8D6EE622475792900DDF873 /* ListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EE612475792900DDF873 /* ListVCTests.swift */; };
 		A8D6EEC22479176800DDF873 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EEC12479176800DDF873 /* ListController.swift */; };
 		A8D6EEC5247931E600DDF873 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EEC4247931E600DDF873 /* ListCell.swift */; };
 		A8D6EEC92479592A00DDF873 /* GridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EEC82479592A00DDF873 /* GridController.swift */; };
@@ -48,7 +47,6 @@
 		A8D6EE482474661000DDF873 /* For Readdle by Alex KulyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "For Readdle by Alex KulyaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D6EE4A2474661000DDF873 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		A8D6EE4C2474661000DDF873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8D6EE612475792900DDF873 /* ListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCTests.swift; sourceTree = "<group>"; };
 		A8D6EEC12479176800DDF873 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		A8D6EEC4247931E600DDF873 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		A8D6EEC82479592A00DDF873 /* GridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridController.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		A839DE992466E70A0038C796 = {
 			isa = PBXGroup;
 			children = (
-				A8D6EEC32479201000DDF873 /* TEST */,
 				A839DEA42466E70A0038C796 /* For Readdle by Alex Kulya */,
 				A8D6EE492474661000DDF873 /* For Readdle by Alex KulyaTests */,
 				A839DEA32466E70A0038C796 /* Products */,
@@ -240,18 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				A8D6EE5F2475786000DDF873 /* Model */,
-				A8D6EE5E2475785900DDF873 /* Views */,
-				A8D6EE602475786C00DDF873 /* Controllers */,
 				A8D6EE4C2474661000DDF873 /* Info.plist */,
 			);
 			path = "For Readdle by Alex KulyaTests";
-			sourceTree = "<group>";
-		};
-		A8D6EE5E2475785900DDF873 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A8D6EE5F2475786000DDF873 /* Model */ = {
@@ -260,21 +248,6 @@
 				A8D6EE4A2474661000DDF873 /* PersonTests.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		A8D6EE602475786C00DDF873 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A8D6EE612475792900DDF873 /* ListVCTests.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A8D6EEC32479201000DDF873 /* TEST */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TEST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,7 +410,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D6EE622475792900DDF873 /* ListVCTests.swift in Sources */,
 				A8D6EE4B2474661000DDF873 /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
