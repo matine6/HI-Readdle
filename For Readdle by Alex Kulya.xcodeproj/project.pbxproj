@@ -13,14 +13,14 @@
 		A839DEAD2466E70A0038C796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A839DEAB2466E70A0038C796 /* Main.storyboard */; };
 		A839DEAF2466E70C0038C796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A839DEAE2466E70C0038C796 /* Assets.xcassets */; };
 		A839DEB22466E70C0038C796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A839DEB02466E70C0038C796 /* LaunchScreen.storyboard */; };
-		A839DEBB2466E88E0038C796 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEBA2466E88E0038C796 /* CollectionController.swift */; };
-		A839DEBD2466E8A80038C796 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEBC2466E8A80038C796 /* TableController.swift */; };
 		A839DEBF2466E8BB0038C796 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEBE2466E8BB0038C796 /* DetailController.swift */; };
-		A839DEC22466E8E00038C796 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC12466E8E00038C796 /* TableViewCell.swift */; };
-		A839DEC42466E8F30038C796 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC32466E8F30038C796 /* CollectionViewCell.swift */; };
 		A839DEC72466E9110038C796 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839DEC62466E9110038C796 /* Person.swift */; };
 		A8D6EE4B2474661000DDF873 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EE4A2474661000DDF873 /* PersonTests.swift */; };
 		A8D6EE622475792900DDF873 /* ListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EE612475792900DDF873 /* ListVCTests.swift */; };
+		A8D6EEC22479176800DDF873 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EEC12479176800DDF873 /* ListController.swift */; };
+		A8D6EEC5247931E600DDF873 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EEC4247931E600DDF873 /* ListCell.swift */; };
+		A8D6EEC92479592A00DDF873 /* GridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EEC82479592A00DDF873 /* GridController.swift */; };
+		A8D6EECB24795BCB00DDF873 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D6EECA24795BCB00DDF873 /* GridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,16 +43,16 @@
 		A839DEAE2466E70C0038C796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A839DEB12466E70C0038C796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A839DEB32466E70C0038C796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A839DEBA2466E88E0038C796 /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
-		A839DEBC2466E8A80038C796 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		A839DEBE2466E8BB0038C796 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
-		A839DEC12466E8E00038C796 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		A839DEC32466E8F30038C796 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A839DEC62466E9110038C796 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A8D6EE482474661000DDF873 /* For Readdle by Alex KulyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "For Readdle by Alex KulyaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D6EE4A2474661000DDF873 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		A8D6EE4C2474661000DDF873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D6EE612475792900DDF873 /* ListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCTests.swift; sourceTree = "<group>"; };
+		A8D6EEC12479176800DDF873 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		A8D6EEC4247931E600DDF873 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		A8D6EEC82479592A00DDF873 /* GridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridController.swift; sourceTree = "<group>"; };
+		A8D6EECA24795BCB00DDF873 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		E77EDF13046F7EA23F91EB8D /* Pods_For_Readdle_by_Alex_Kulya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_For_Readdle_by_Alex_Kulya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +95,7 @@
 		A839DE992466E70A0038C796 = {
 			isa = PBXGroup;
 			children = (
+				A8D6EEC32479201000DDF873 /* TEST */,
 				A839DEA42466E70A0038C796 /* For Readdle by Alex Kulya */,
 				A8D6EE492474661000DDF873 /* For Readdle by Alex KulyaTests */,
 				A839DEA32466E70A0038C796 /* Products */,
@@ -206,7 +207,7 @@
 		A839DF46246D893D0038C796 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A839DEC32466E8F30038C796 /* CollectionViewCell.swift */,
+				A8D6EECA24795BCB00DDF873 /* GridCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,7 +215,7 @@
 		A839DF47246D894E0038C796 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A839DEBA2466E88E0038C796 /* CollectionController.swift */,
+				A8D6EEC82479592A00DDF873 /* GridController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,7 +223,7 @@
 		A839DF48246D89730038C796 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A839DEC12466E8E00038C796 /* TableViewCell.swift */,
+				A8D6EEC4247931E600DDF873 /* ListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,7 +231,7 @@
 		A839DF49246D89790038C796 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A839DEBC2466E8A80038C796 /* TableController.swift */,
+				A8D6EEC12479176800DDF873 /* ListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +268,13 @@
 				A8D6EE612475792900DDF873 /* ListVCTests.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8D6EEC32479201000DDF873 /* TEST */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TEST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,14 +422,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A839DEBD2466E8A80038C796 /* TableController.swift in Sources */,
-				A839DEBB2466E88E0038C796 /* CollectionController.swift in Sources */,
+				A8D6EEC22479176800DDF873 /* ListController.swift in Sources */,
+				A8D6EEC5247931E600DDF873 /* ListCell.swift in Sources */,
 				A839DEA62466E70A0038C796 /* AppDelegate.swift in Sources */,
-				A839DEC42466E8F30038C796 /* CollectionViewCell.swift in Sources */,
-				A839DEC22466E8E00038C796 /* TableViewCell.swift in Sources */,
+				A8D6EEC92479592A00DDF873 /* GridController.swift in Sources */,
 				A839DEBF2466E8BB0038C796 /* DetailController.swift in Sources */,
 				A839DEC72466E9110038C796 /* Person.swift in Sources */,
 				A839DEA82466E70A0038C796 /* SceneDelegate.swift in Sources */,
+				A8D6EECB24795BCB00DDF873 /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
